@@ -3,7 +3,11 @@ import { FlatList, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Constants } from 'expo';
 
 export default class App extends React.Component {
-  constructor(props) {
+    static navigationOptions = {
+        title: 'Cities',
+    };
+  
+    constructor(props) {
     super(props);
 
     this.state = {
